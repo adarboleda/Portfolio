@@ -15,6 +15,7 @@ body {
     --text-color:#fff;
     --span-color: #40bfbf;
     --span1-color: #1cb698;
+    --span2-color: #38b3b3;
 }
 
 /* ---- MENU ---- */
@@ -68,4 +69,62 @@ body {
     border-radius: 0.31rem;
     cursor: pointer;
     display: none;
+}
+
+/* ---- HOME SECTION---- */
+
+.home{
+    background: linear-gradient(to top, rgba(30,35,38,.8),rgba(30,35,38,1)), url(https://www.neolo.com/blog/wp-content/uploads/2018/12/Fig-01-C%C3%B3mo-convertirse-en-un-desarrollador-web.jpg);
+    background-size: cover;
+    height: 100dvh;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+.home__info-container {
+    padding: 1.25rem;
+    background-color: var(--bg-color);
+    max-width: 21.88rem; /*350px*/
+    margin: auto;
+    text-align: center;
+    border-radius: 2.5rem; /*40px*/
+}
+
+.home__img {
+    margin-top: 2.5rem;
+    background-color: var(--span-color);
+    border: 10px solid var(--span1-color);
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.home__title{
+    margin-top: 2.5rem;
+    font-size: 2.63rem;
+}
+
+.home__info {
+    font-size: 0.93rem;
+    font-weight: normal;
+}
+
+.home__link {
+    color: var(--text-color);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    width: 2.62rem;
+    height: 2.62rem;
+    line-height: 2.62rem;
+    margin: 2.5rem 0.31rem;
+    font-size: 1.25rem;
+    transition: .3s;
+}
+
+.home__link:hover{
+    background-color: var(--span1-color);
 }
