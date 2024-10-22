@@ -15,7 +15,7 @@ body {
     --text-color:#fff;
     --span-color: #40bfbf;
     --span1-color: #1cb698;
-    --span2-color: #38b3b3;
+    --interests-color: #252a2e;
 }
 
 /* ---- MENU ---- */
@@ -71,7 +71,7 @@ body {
     display: none;
 }
 
-/* ---- HOME SECTION---- */
+/* ---- HOME SECTION ---- */
 
 .home{
     background: linear-gradient(to top, rgba(30,35,38,.8),rgba(30,35,38,1)), url(https://www.neolo.com/blog/wp-content/uploads/2018/12/Fig-01-C%C3%B3mo-convertirse-en-un-desarrollador-web.jpg);
@@ -127,4 +127,123 @@ body {
 
 .home__link:hover{
     background-color: var(--span1-color);
+}
+
+/* ---- ABOUT ME SECTION ---- */
+.about-me{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 3.13rem 1.25rem;
+}
+
+.about-me__contain{
+    max-width: 70rem;
+    margin: auto;
+}
+
+.about-me__title{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+.about-me__text{
+    font: 1.13rem;
+    line-height: 1.38rem;
+    margin-bottom: 1.25rem;
+}
+
+.about-me__text span{
+    color: var(--span1-color);
+    font-weight: bold;
+}
+
+.about-me__row {
+    display: flex;
+}
+
+.about-me__data{
+    width: 50%;
+}
+
+.about-me__data-info{
+    font-size: 1.75rem;
+    margin-bottom: 1.56rem;
+}
+
+.about-me__ulist{
+    list-style: none;
+}
+
+.about-me__list {
+    margin: 0.75rem 0;
+}
+
+.about-me__list strong {
+    display: inline-block;
+    color: var(--span1-color);
+    width: 8.13rem;
+}
+
+.about-me__list span {
+    background-color: var(--span1-color);
+    padding: 0.19rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+}
+
+.about-me__data-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me__data-interests{
+    width: 7rem;
+    height: 6.25rem;
+    background-color: var(--interests-color);
+    border-radius: 0.63rem;
+    margin: 0 0.93rem 0.93rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.about-me__data-interests:hover{
+    background-color: var(--span1-color);
+}
+
+.about-me__interests-icon{
+    font-size: 1.88rem;
+    margin-bottom: 0.65rem;
+}
+
+.about-me__cv-button{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid var(--text-color);
+    width: fit-content;
+    display: block;
+    margin: 1.25rem auto;
+    padding: 0.63rem 1.38rem;
+    font-size: 0.63rem;
+    color: var(--text-color);
+    position: relative;
+    z-index: 10;
+}
+
+.about-me__overley {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--span1-color);
+    z-index: -1;
+    transition: 1s;
+}
+
+.about-me__cv-button:hover .about-me__overley{
+    width: 100%;
 }
